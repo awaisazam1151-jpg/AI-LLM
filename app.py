@@ -30,7 +30,7 @@ if prompt := st.chat_input("Enter a topic (e.g., 'Calculus', 'Neural Networks').
     with st.chat_message("assistant"):
         with st.spinner("Generating explanation..."):
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-2.0-flash",
                 contents=prompt,
                 config={
                     "system_instruction": (
